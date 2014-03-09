@@ -1,3 +1,19 @@
 // Place all the styles related to the Offers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.left {
+  width: 30%;
+  float: left;
+  .button_to {
+    margin-left: 100px;
+  }
+}
+.offers {
+  width: 30%;
+  float: left;
+  .coupon {
+    border: 3px solid; 
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}

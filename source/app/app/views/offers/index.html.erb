@@ -1,3 +1,13 @@
-<%= button_to 'Crawl!', offers_path, method: :post %>
-
-<h1><%= Offer.all.count %> Offers</h1>
+<div class="left">
+  <%= button_to 'Crawl!', offers_path, method: :post %>
+</div>
+<div class="offers">
+  <h1><%= Offer.all.count %> Offers</h1>
+  <% @offers.each do |offer| %>
+    <div class="coupon">
+      <h3><%= offer.title %></h3>
+      <p><%= offer.description %></p>
+      <%= button_to 'Get Deal', offer.url %>
+    </div>
+  <% end %>
+</div>
